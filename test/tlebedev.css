@@ -1,0 +1,157 @@
+.vishnu-container {
+    width: 228px;
+    height: 400px;
+    overflow: visible;
+    background: transparent;
+    position: absolute;
+    /*left: 30px;*/
+    right: 30px;
+    bottom: 0px;
+    z-index: 101;
+    opacity: 0.99;
+}
+#vishnu-view {
+    width: 250px;
+    height: 210px;
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    z-index: 201;
+}
+#vishnu-view img {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 211;
+    height: 100%;
+}
+#vishnu-response {
+    width: 225px;
+    max-height: 220px;
+    position: absolute;
+    bottom: 280px;
+    left: 0px;
+    background: url('i/baloon-top.png') 0 0 no-repeat;
+    z-index: 501;
+}
+#vishnulite_response_wrap {
+    width: 100%;
+    max-height: 215px;
+    position: relative;
+}
+#vishnu-response-text {
+    margin: 5px 0 0px 8px;
+    width: 195px;
+    max-height: 210px;
+    min-height: 50px;
+    overflow: auto;
+    position: relative;
+    z-index: 511;
+    font: 11px "Verdana", Arial, Tahoma, sans-serif;
+    color: #000;
+    padding: 1px 0;
+}
+/*#vishnu-response:after {
+content: "";
+position: absolute;
+z-index: 213;
+bottom: -16px;
+left: 5px;
+width: 21px;
+height: 23px;
+background: url('/iframe/i/user_tail.png') no-repeat center center transparent;
+}*/
+#vishnu-response-text a.vishnulite-userlink {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px dashed #000;
+}
+#vishnu-response-text a {
+    color: #000;
+    text-decoration: underline;
+}
+
+#vishnu-request {
+    width: 225px;
+    height: 80px;
+    position: absolute;
+    bottom: 200px;
+    left: 0px;
+    z-index: 601;
+    background: url('i/baloon-bottom.png') 0 100% no-repeat;
+}
+#vishnu-input {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 190px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    overflow: auto;
+    overflow-x: hidden;
+    vertical-align: middle;
+    white-space: normal;
+    font: 11px "Verdana", Arial, Tahoma, sans-serif;
+    background: transparent;
+    color: #808285;
+    resize: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+#vishnu-input.placeholder-default {
+    color: #999999;
+}
+#vishnu-send {
+    border: none;
+    width: 11px;
+    height: 12px;
+    position: absolute;
+    bottom: 28px;
+    right: 12px;
+    vertical-align: middle;
+    background: url('i/send.png') no-repeat;
+    cursor: pointer;
+    outline: none;
+}
+#vishnu-close {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 4px;
+    right: 4px;
+    background: url('i/close.png') no-repeat;
+    cursor: pointer;
+    z-index: 251;
+}
+#vishnu-button-one {
+    /*position: fixed;
+    right: 0;
+    transform: rotate(180deg);
+    cursor: pointer;
+    bottom: 30px;
+    width:33px;
+    height:172px;
+    background: url('i/button-left.png') no-repeat;
+    opacity: 0.99;
+    z-index: 100;*/
+    position: fixed;
+    right: -63px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    bottom: 110px;
+    width: auto;
+    height: 33px;
+    background-color: darkred;
+    opacity: 0.99;
+    z-index: 100;
+    line-height: 33px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    padding: 0 50px;
+}
+#vishnu-button-one.selected {
+    display: none;
+}
